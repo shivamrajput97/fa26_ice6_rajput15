@@ -23,7 +23,7 @@ def test_health_returns_ok():
 
     # Assert
     assert response.status_code == 200
-    assert response.json() == {"status": "nope"}
+    assert response.json() == {"status": "ok"}
 
 
 def test_polish_falls_back_when_no_project(monkeypatch):
